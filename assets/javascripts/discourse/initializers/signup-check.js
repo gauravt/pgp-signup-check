@@ -1,7 +1,6 @@
 export default {
   name: 'alert',
   initialize() {
-    alert("Working");
     Discourse.User.findByUsername(Discourse.User._current.username).then(function(user){
             //res = user.custom_fields.user_field_4;
             console.log("User Onboarding: "+user);
